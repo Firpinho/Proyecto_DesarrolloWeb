@@ -1,0 +1,19 @@
+.error-main-container {
+    background: white !important;
+    padding-top : 50px;
+    height: 95vh;
+    margin: 0 40px;
+    @include center(column);
+    h1 {
+        font-size: 85px;
+    }
+    h2{
+        padding-bottom: 50px;
+    }
+    button{
+        margin-top: 20px;
+    }
+    img{
+        width: 200px;
+    }
+}

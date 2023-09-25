@@ -1,0 +1,55 @@
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin center ($direction){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin sublist($width, $ul-height, $li-height) {
+    ul {
+        height: 0;
+        width: $width;
+        overflow: hidden;
+        position: absolute;
+        top: 54px;
+        display: block;
+        background-color: white;
+        transition-property: height;
+        transition-duration: .1s;
+        transition-timing-function: linear;
+        li {
+            display: flex;
+            padding: 5px !important; 
+            align-self: center;
+        }
+    }
+
+    &:hover{
+        ul {
+            padding: 10px 10px;
+            height: $ul-height;
+            background-color: $hover_color;
+            margin: 0 auto;
+            border-radius: 5px;
+            li {
+                height: $li-height;
+                display: flex;
+                width: 99%;
+                &:hover {
+                    background-color: #cecece;
+                }
+                a{
+                    align-self: center;
+                    width: 100%;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}

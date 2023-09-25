@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Campizal | 403 Error</title>
+    <meta charset="UTF-8" />
+    <script
+      src="../third-party/fontawesome-free-6.4.2-web/js/all.min.js"
+      crossorigin="anonymous"
+      async
+    ></script>
+
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="../img/logo.webp"
+      type="image/x-icon"
+      title="Campizal Construcciones | Campizal"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="img">
+          <a href="https://www.campizal.com/"
+            ><img
+              src="https://www.campizal.com/img/logo.webp"
+              alt=""
+              width="50px"
+              height="50px"
+          /></a>
+        </div>
+        <ul>
+          <li class="opt-1">
+            <a href="https://www.campizal.com/">Home</a>
+          </li>
+          <li class="opt-2">
+            <a href="https://www.campizal.com/pages/nosotros.html"
+              >Nosotros</a
+            >
+          </li>
+          <li class="opt-3">
+            <span class="economia_plateada_color">Economía plateada</span>
+            <ul>
+              <li>
+                <a
+                  href="https://www.campizal.com/pages/inversion_retiro.html"
+                  ><span class="economia_plateada_color"
+                    >Inversión Retiro</span
+                  ></a
+                >
+              </li>
+              <li style="background-color: #8b51f5">
+                <a
+                  href="https://www.campizal.com/pages/apartamentos_silver.html"
+                  ><span
+                    class="economia_plateada_color"
+                    style="color: ghostwhite"
+                    >Apartamentos Silver</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.campizal.com/pages/confort.html"
+                  ><span class="economia_plateada_color">Confort</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="opt-4">
+            <span>Servicios Constructivos</span>
+            <ul>
+              <li>
+                <a
+                  href="https://www.campizal.com/pages/casas_financiadas.html"
+                  >Casas Financiadas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.campizal.com/pages/llave_en_mano.html"
+                  >Llave en mano</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.campizal.com/pages/presupuestos.html"
+                  >Presupuestos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.campizal.com/pages/oportunidades.html"
+                  >Oportunidades</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="opt-5">
+            <p><i class="fa-solid fa-bars fa-2x"></i></p>
+            <div class="burger-container">
+              <ul>
+                <li class="opt-1-burger">
+                  <a href="https://www.campizal.com/">Home</a>
+                </li>
+                <li class="opt-2-burger">
+                  <a
+                    href="https://www.campizal.com/pages/nosotros.html"
+                    >Nosotros</a
+                  >
+                </li>
+                <li class="opt-3-burger">
+                  <span class="economia_plateada_color">Economía plateada</span>
+                  <ul>
+                    <div class="options">
+                      <li>
+                        <a
+                          href="https://www.campizal.com/pages/inversion_retiro.html"
+                          ><span class="economia_plateada_color"
+                            >Inversión Retiro</span
+                          ></a
+                        >
+                      </li>
+                      <li style="background-color: #8b51f5">
+                        <a
+                          href="https://www.campizal.com/pages/apartamentos_silver.html"
+                          ><span
+                            class="economia_plateada_color"
+                            style="color: ghostwhite"
+                            >Apartamentos Silver</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.campizal.com/pages/confort.html"
+                          ><span class="economia_plateada_color"
+                            >Confort</span
+                          ></a
+                        >
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+                <li class="opt-4-burger">
+                  <span>Servicios Constructivos</span>
+                  <ul>
+                    <div class="options">
+                      <li>
+                        <a
+                          href="https://www.campizal.com/pages/casas_financiadas.html"
+                          >Casas Financiadas</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.campizal.com/pages/llave_en_mano.html"
+                          >Llave en mano</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.campizal.com/pages/presupuestos.html"
+                          >Presupuestos</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.campizal.com/pages/oportunidades.html"
+                          >Oportunidades</a
+                        >
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="error-main-container">
+        <div class="logo">
+            <img src="../img/logo.webp" alt="">
+        </div>
+        <div class="description">
+            <h1>¡403!</h1>
+            <h2>No hay nada que debas ver aqui!</h2>
+            <p>Regresa al Home, y seguro, con mucho gusto, te daremos la atención que mereces.</p>
+        </div>
+        <div class="button">
+            <button onclick="window.location.href = 'https://www.campizal.com/'"><p><i class="fa-solid fa-house"></i> home</p></button>
+        </div>
+    </main>
+
+    <footer>
+      <div class="logo">
+        <div class="container-footer-logo">
+          <div class="image">
+            <img
+              src="https://www.campizal.com/img/logo.webp"
+              alt=""
+              width="50px"
+              height="50px"
+            />
+          </div>
+          <div class="footer-title">
+            <h4>Campizal</h4>
+            <h5>Construcciones</h5>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        Para construir, como inversión, para vivienda,todos los sistemas
+        construcctivos con la mejor calidad, una excelente inversión asegurando
+        el futuro.
+      </div>
+      <div class="media">
+        <a href="https://www.instagram.com/campizalconstrucciones/?hl=es-la"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/profile.php?id=100086161587419"
+          ><i class="fa-brands fa-square-facebook"></i
+        ></a>
+        <a
+          href="https://www.pinterest.com/1bvwo3kt0ywa7x7xsxyn2818m0i9bq/?invite_code=f0d9d7c070974f01bf52744eac61746c&sender=875317014984566050"
+          ><i class="fa-brands fa-square-pinterest"></i
+        ></a>
+        <a href="mailto:info@campizal.com"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="../third-party/sweetalert2/sweetalert2.all.min.js"></script>
+    <script src="../js/scripts.js"></script>
+  </body>
+</html>

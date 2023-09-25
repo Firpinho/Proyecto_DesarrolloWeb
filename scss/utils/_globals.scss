@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap
+}   
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Bold.ttf');
+    font-weight: bold;
+    font-style: bold;
+    font-display: swap
+}   
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/static/Montserrat-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap
+}   
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/static/Montserrat-Bold.ttf');
+    font-weight: bold;
+    font-style: bold;
+    font-display: swap
+}   
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-weight: bolder;
+}
+
+a {
+    color: $text_color;
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Montserrat';
+    color : $text_color;
+    width: 100%;
+}
+
+.economia_plateada_color {
+    text-decoration: none;
+    color: $economia_plateada_color;
+    font-weight: bold;
+}
+
+.campizal-color {
+    text-decoration: none;
+    color: $campizal_color;
+    font-weight: bold;
+}
+
+.img-zoom {
+    @include center(row);
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(56, 56, 56, 0.900);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    button {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        border-radius: 10%;
+        padding: 10px;
+    }
+    img {
+        width: 90%;
+        height: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        border-radius: 6px;
+        object-fit: contain;
+    }
+    .close {
+        color: ghostwhite;
+        font-size: 50px;
+        font-weight: bold;
+        position: absolute;
+        top: 5px;
+        right: 25px;
+        cursor: pointer;
+    }
+}
+
+
+hr {
+    border-style: none;
+}

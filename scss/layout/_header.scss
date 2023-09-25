@@ -1,0 +1,142 @@
+header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+
+}
+nav {
+    font-weight: bold;
+    display: flex;
+    max-height: 70px;
+    justify-content: space-between;
+    li{
+        padding: 16px;
+        border-radius: 15px;
+        &:hover {
+            background-color: $hover_color;
+        }
+
+        a {
+            display: block;
+            padding: 10px;
+
+        }
+
+        span {
+            display: block;
+            padding: 10px;
+        }
+    }
+    .img{
+        height: 50px;
+        align-self: center;
+        img {
+            padding: 0 auto;
+            margin-left: 10px;
+        }
+    }
+    ul {
+        padding: 0 20px;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+
+        .opt-1, .opt-2, .opt-3, .opt-4 {
+            display: none;
+        }
+
+        .opt-3{
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            @include sublist(192px, 190px, 28%);
+            ul {
+                right: 300px !important;
+            }
+        }
+        
+        .opt-4 {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            @include sublist(228px, 240px, 20%);
+            ul {
+                right: 20px;
+            }
+        }
+
+        .opt-3 {
+            ul {
+                right: 30px;
+            }
+        }
+
+        .opt-5 {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            width: 100%;
+            .burger-container{
+                position: absolute;
+                right: 0;
+                top: 60px;
+                width: 100%;
+                height: 60%;
+            }
+
+            ul {
+                display: none;
+                background-color: white;
+                li {
+                    height: calc(100% / 4);
+                    width: 100%;
+                    padding: 5px;
+                    ul {
+                        background-color: $hover_color;
+                        height: 0;
+                        overflow: hidden;
+                        transition-property: height;
+                        transition-duration: .2s;
+                        transition-timing-function: linear;
+                        li {
+                            &:hover {
+                                background-color: #cecece;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        ul {
+                            height: 250px;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                ul {
+                    display: block;
+                }
+            }
+        }
+
+        li {
+            height: 16%;
+            width: auto;
+            align-items: center;
+            text-align: center;
+            .options {
+                margin: 20px 0;
+            }
+            p {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                height: 100%;
+            }
+
+        }
+    }
+}

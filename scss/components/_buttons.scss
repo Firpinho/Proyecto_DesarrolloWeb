@@ -1,0 +1,24 @@
+button {
+    color: ghostwhite;
+    font-size: medium;
+    font-weight: bold;
+    border-style: none;
+    background-color : #272d6d;
+    background-image : linear-gradient(to right, transparent, $campizal_color);
+    border-color: $campizal_color;
+    border-radius: 50px;
+    padding: 15px;
+    cursor: pointer;
+    transition : background-color 0.5s ease 0s;
+    &:hover {
+        background-color: $campizal_color;
+    }
+}
+
+.economia-plateada-button {
+    background-color: #6f3dce;
+    background-image : linear-gradient(to right, transparent, $economia_plateada_color);
+    &:hover {
+        background-color: $economia_plateada_color;
+    }
+}

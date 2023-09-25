@@ -1,0 +1,134 @@
+.container {
+  @include flex-column;
+  align-items: center;
+  padding-top: 60px;
+  h1 {
+    color: $campizal_color;
+    font-size: 45px;
+    padding: 25px 30px;
+    text-align: center;
+  }
+}
+
+.card-container {
+  @include center(column);
+  padding: 10px 0;
+  gap: 4px;
+  width: 100%;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 300px auto;
+  grid-template-columns: 1fr;
+  width: 95%;
+  height: 650px;
+  background-color: ghostwhite;
+  .card-content {
+    @include center(column);
+    overflow: auto;
+    h3 {
+      font-size: 25px;
+      padding: 20px;
+      text-align: center;
+    }
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 1px 1px 0 0;
+  }
+}
+
+.economia-plateada {
+  hr {
+    background-color: $economia_plateada_color !important;
+    border-color: $economia_plateada_color !important;
+  }
+}
+
+.complete-title-card {
+  .title {
+    h2 {
+      font-size: 25px;
+    }
+    hr {
+      background-color: $campizal_color;
+      border-color: $campizal_color;
+      height: 2px;
+      width: 25%;
+      margin: 20px auto;
+    }
+    h3 {
+      font-size: 25px;
+    }
+  }
+}
+
+.list-card {
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    gap: 20px;
+    width: 80%;
+    text-align: start !important;
+  }
+}
+
+.img-card {
+  img {
+    height: 250px;
+  }
+  p {
+    padding-bottom: 15px;
+  }
+}
+
+.info-card {
+  display: block;
+  overflow: auto;
+  .card-content {
+    @include center(column);
+  }
+  .text {
+    padding: 10px 0;
+    height: 100%;
+    @include center(column);
+    gap: 1rem;
+    p {
+      width: 90%;
+      align-self: center;
+      text-align: start !important;
+    }
+  }
+  button {
+    margin: 20px 0;
+    @include center(row);
+    gap: 15px;
+  }
+  img {
+    max-height: 300px;
+  }
+}
+
+.no-img {
+  .card-content {
+    h3 {
+      text-align: center;
+      padding-bottom: 60px;
+    }
+  }
+}
+
+.team {
+  display: flex;
+  align-self: center;
+  padding: 60px 0;
+  gap: 50px;
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
